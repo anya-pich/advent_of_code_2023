@@ -7,7 +7,7 @@ die (){ echo "$@"; exit 1; }
 DAY="$1"
 DAYDIR="day$DAY"
 FILE="$DAYDIR/input.txt"
-URL="https://adventofcode.com/2022/day/${DAY#0}/input"
+URL="https://adventofcode.com/2023/day/${DAY#0}/input"
 
 [[ -d "$DAYDIR" ]] || die "Invalid day"
 [[ -f "$FILE" ]] && die "Already downloaded"
